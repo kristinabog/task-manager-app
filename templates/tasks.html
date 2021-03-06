@@ -10,12 +10,12 @@
                 <div class="col s3">
                     <i class="fas fa-caret-down"></i>
                     <a href="" class="btn-small green accent-4">Done</a>
-                    <a href="{{ url_for('edit_task', task_id=task._id) }}" class="btn-small red lighten-2">Edit</a>
+                    <a href="{{ url_for('edit_task', task_id=task._id) }}" class="btn-small red darken-3">Edit</a>
                 </div>
                 <div class="col s9">
                     <strong>{{ task.task_name }}</strong> : {{ task.due_date }}
                     {% if task.is_urgent == "on" %}
-                        <i class="fas fa-exclamation-circle red-text lighten-2 tooltipped"
+                        <i class="fas fa-exclamation-circle white-text lighten-2 tooltipped"
                             data-position="right" data-tooltip="URGENT!"></i>
                     {% endif %}
                 </div>
